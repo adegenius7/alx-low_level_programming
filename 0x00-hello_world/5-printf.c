@@ -1,4 +1,9 @@
 #include<stdio.h>
+/*
+ *
+ * main -is where program starts from
+ */
+
 
 int main()
 {

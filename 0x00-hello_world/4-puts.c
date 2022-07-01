@@ -1,14 +1,18 @@
 #include <stdio.h>
+
+
 /**
+ * main - Where programs are executed
  *
- *
- * main--program starts from main
- *
- *Return: 0
+ * Return: 0
  */
+
 int main(void)
 
 {
-	puts("\"Programming is like building a multilingual puzzle");
-		return (0);
+
+		puts("\"Programming is like building a multilingual puzzle");
+
+			return (0);
+
 }

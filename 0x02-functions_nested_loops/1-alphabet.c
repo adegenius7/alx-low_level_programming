@@ -1,21 +1,19 @@
-#include "main.h"
 #include <unistd.h>
+#include "main.h"
 
 /**
- * main - where program starts
- * my function is in my header file
- *
- * Return: 0 alwyas as success
- *
- */
+* print_alphabet - prints the alphabets
+*
+* Return: returns 0
+*/
+
 void print_alphabet(void)
 {
-	char i;
+char alpha;
 
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		_putchar (i);
-	}
-	_putchar ('\n');
-	return (0);
+for (alpha = 'a'; alpha <= 'z'; alpha++)
+{
+_putchar (alpha);
+}
+_putchar ('\n');
 }

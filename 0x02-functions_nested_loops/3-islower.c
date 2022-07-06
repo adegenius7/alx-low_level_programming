@@ -1,23 +1,23 @@
 #include <unistd.h>
-#include "main.h"
-#include <ctype.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include "main.h"
 
 /**
- * _islower -where program starts
- *
- *@c: the alphabet to be checked
- * Return: 1 if c is lowercase and returns 0 if otherwise
- *
- */
+* _islower - checks for a lowercase character
+*
+* @c: the character to be checked
+*
+* Return: returns 1 if the character is lower case and 0 otherwise
+*/
 int _islower(int c)
 {
-	if (_islower(c) != 0)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+if (islower(c) != 0)
+{
+return (1);
+}
+else
+{
+return (0);
+}
 }

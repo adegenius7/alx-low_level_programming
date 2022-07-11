@@ -5,7 +5,7 @@
 *int as parameter and updates the value it
 *points to to 98.
 *@n: the pointer
-* Return: returns 0
+* Return: returns
 */
 void reset_to_98(int *n)
 {

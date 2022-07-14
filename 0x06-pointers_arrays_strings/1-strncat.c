@@ -1,29 +1,33 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- **_strncat- our function for concactenation
- *@dest: destination string
- *@src: source string
- *@n: number considered
- *Return: dest is returned
+ * _strncat - two words
+ * @dest : pointer to char param
+ * @src : pointer to char param
+ * @n : int parameter
+ * Return: *dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j, n;
+	int m;
+	int i;
 
-	i = 0, j = 0;
+	m = 0;
 
-	while (dest[i] != '\0')
+	for (i = 0; i < 1000; i++)
 	{
-		i++;
+		if (dest[i] == '\0')
+		{
+			break;
+		}
+		m++;
 	}
-	for (j = 0; src[j] != '\0' && j <= n; j++)
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		dest[i] = src[j];
-		i++;
+		dest[m + i] = src[i];
 	}
-	dest[i] = '\0'
-		return (dest);
+	dest[m + i] = '\0';
+	return (dest);
 }

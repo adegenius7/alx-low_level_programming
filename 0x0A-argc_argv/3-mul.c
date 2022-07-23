@@ -7,13 +7,14 @@
  *@argc: number of arguments
  *c:numbers
  *d: numbers
+ *a: error
  *Return: Always 0
  */
 
 int main(int argc, char *argv[])
 {
-	signed long long int d, c;
-	signed long long int result;
+	int d, c;
+	int result;
 
 	c = atoi(argv[1]);
 	d = atoi(argv[2]);
@@ -21,13 +22,11 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 
 		return (1);
 	}
-	else
-	{
-		printf("%d\n", result);
-		return (0);
-	}
+
+	printf("%d\n", result);
+	return (0);
 }

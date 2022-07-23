@@ -20,13 +20,15 @@ int main(int argc, char *argv[])
 	d = atoi(argv[2]);
 	result = (c * d);
 
-	if (argc != 3)
+	if (argc < 3 || argc > 3)
 	{
-		printf("%s\n", "Error");
+		printf("Error\n");
 
 		return (1);
 	}
-
-	printf("%d\n", result);
-	return (0);
+	else
+	{
+		printf("%d\n", result);
+		return (0);
+	}
 }

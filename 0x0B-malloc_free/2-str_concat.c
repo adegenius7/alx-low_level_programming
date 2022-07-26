@@ -37,4 +37,5 @@ char *str_concat(char *s1, char *s2)
 		}
 		k++;
 	}
+	return (0);
 }

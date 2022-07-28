@@ -1,31 +1,29 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
- *_calloc- calloc library internally implemented
- *@nmemb: param 1
- *@size: param 2
- *Return: always 0
+ * _calloc - allocates memory for an array.
+ * @nmemb: number of elements.
+ * @size: size of bytes.
+ *
+ * Return: pointer to the allocated memory.
+ * if nmemb or size is 0, returns NULL.
+ * if malloc fails, returns NULL.
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem;
-	char *filter;
-	unsigned int index;
+char *p;
+unsigned int i;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	mem = malloc(size * nmemb);
-	if (mem == NULL)
-	{
-		return (NULL);
-	}
-	filler = mem;
-	for (index = 0; index < (size * nmemb); index++)
-	{
-		filler[index] = 0;
-	}
-	return (mem);
+if (nmemb == 0 || size == 0)
+return (NULL);
+
+p = malloc(nmemb * size);
+
+if (p == NULL)
+return (NULL);
+
+for (i = 0; i < (nmemb * size); i++)
+p[i] = 0;
+
+return (p);
 }

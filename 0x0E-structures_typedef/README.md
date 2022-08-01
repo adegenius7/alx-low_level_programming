@@ -1,1 +1,1 @@
-typedef
+## readme for structure
